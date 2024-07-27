@@ -6,6 +6,7 @@ import Home from './Home';
 import PostList from './PostList';
 import MemberLogin from './Login/MemberLogin'
 import { ChakraProvider } from '@chakra-ui/react';
+import AddRepository from './Repository/AddRepository';
 
 const router = createBrowserRouter([
 {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     },
     { path:"login",element:<MemberLogin></MemberLogin>},
     { path: "post", element: <PostList /> },
+    { path: "addRepo", element: <AddRepository /> },
   ],
 },
 ]);

@@ -26,11 +26,11 @@ const UnderNav = () => {
         px={{ base: 4, md: 8 }}
         py={2}
       >
-        <NavItem icon={FaUser} label="마이" onClick={() => navigate("/profile")} />
         <NavItem icon={FaCalendarAlt} label="예약" onClick={() => navigate("/booking")} />
-        <NavItem icon={FaHome} label="Home" onClick={() => navigate("/")} />
         <NavItem icon={FaList} label="Menu" onClick={() => navigate("/menu")} />
+        <NavItem icon={FaHome} label="Home" onClick={() => navigate("/")} />
         <NavItem icon={FaBell} label="알림" onClick={() => navigate("/notifications")} />
+        <NavItem icon={FaUser} label="마이" onClick={() => navigate("/profile")} /> 
       </Flex>
     </Box>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text,useDisclosure,Drawer,DrawerBody,DrawerOverlay,DrawerCloseButton,DrawerFooter,DrawerContent,DrawerHeader,Input,Button,Box, Flex,Center } from '@chakra-ui/react';
+import { Text,useDisclosure,Drawer,DrawerBody,DrawerOverlay,DrawerCloseButton,DrawerFooter,DrawerContent,DrawerHeader,Input,Button,Box, Flex,Center,Image } from '@chakra-ui/react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -24,7 +24,12 @@ function Navbar(props) {
                 <FontAwesomeIcon icon={faBars} size='2xl' style={{color: "lightgray",}} />
             </Box>  
             <Box>
-                LOGO
+            <Image
+  src="/logo.png"
+  alt="Logo"
+  w={"70px"}
+  objectFit="contain"
+/>
             </Box>
             <Box onClick={()=>navigate("login")}>
                 로그인
